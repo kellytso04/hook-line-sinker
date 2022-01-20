@@ -1,28 +1,24 @@
+// TODO: What else will we need to import from React?
 import React from 'react';
+import Message from './Message.jsx';
+import Clock from './Clock.jsx';
 
-const samplePhrases = [
-  'Got any WINS for me this morning?',
-  'Let\'s make it a day',
-  'Lemme spin up my announcement machine',
-  'ETL more like Pee-TL',
-  'Postgres took my lunch  money',
-  'I would like to see the baby *vague horn instrument noises*',
-  'Can I please just get a waffle?'
-]
-
+// TODO: Hmmmmmm, something's not right here.
 class App extends React.Component {
+  // TODO: Constructors are only used in class components. Get this out of my sight immediately.
   constructor(props) {
     super(props);
-
-    this.state = {
-      message: 'Everything is fine';
-    }
   }
 
-
-
+  // TODO: When do we need a `render` function? When do we not?
   render() {
-
+    return (
+      <div className='app'>
+        <Message samplePhrases={props.samplePhrases} />
+        <Clock />
+      </div>
+    )
   }
-
 }
+
+export default App;
