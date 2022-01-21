@@ -14,7 +14,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='app'>
-        <Message samplePhrases={props.samplePhrases} />
+        <Message samplePhrases={this.props.samplePhrases} />
         <Clock />
       </div>
     )

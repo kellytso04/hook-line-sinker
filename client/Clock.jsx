@@ -7,8 +7,8 @@ class Clock extends React.Component {
     super(props);
 
     this.state = {
-      date: new Date(),
-      time: this.state.date.toLocaleTime()
+      date: new Date().toLocaleDateString(undefined, {weekday: 'long', month: 'long', day: 'numeric'}),
+      time: new Date().toLocaleTimeString()
     }
   }
 
@@ -24,13 +24,13 @@ class Clock extends React.Component {
 
   tick() {
     this.setState({
-      date: new Date()
+      time: new Date().toLocaleTimeString()
     });
   }
 
   render() {
     return (
-      <div>Hi! Today is {this.state.date} and it is currently {this.state.time}</div>
+      <div>Today is {this.state.date} and it is currently {this.state.time}</div>
     )
   }
 }
