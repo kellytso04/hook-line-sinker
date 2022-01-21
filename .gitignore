@@ -1,2 +1,4 @@
 # node stuff
 node_modules
+
+public/bundle.js
