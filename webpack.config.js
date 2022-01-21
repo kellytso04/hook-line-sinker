@@ -21,7 +21,8 @@ module.exports = {
         }
       }
     ]
-  }
+  },
   mode: 'development', // add mode option
+  watch: true,
   devtool: 'eval-source-map', // add devtool option
 };
