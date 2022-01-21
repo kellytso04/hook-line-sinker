@@ -1,5 +1,5 @@
 # Quote Dropper
-A quick exercise in which students can practice refactoring to use the `useState` and `useEffect` React hooks
+A quick exercise where students refactor a simple React app to use the `useState` and `useEffect` React hooks.
 
 ## Instructions
 Start Webpack using the `npm run build` command and the live server with the `npm run start`. 
