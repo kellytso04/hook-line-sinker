@@ -1,6 +1,8 @@
 // TODO: What else will we need to import from React?
 import React from 'react';
 import LevelOne from './levelOne/LevelOne.jsx';
+import LevelTwo from './levelTwo/LevelTwo.jsx';
+
 
 // TODO: Hmmmmmm, something's not right here.
 class App extends React.Component {
@@ -9,13 +11,14 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      showLevelOne: true,
-      showLevelTwo: false,
+      showLevelOne: false,
+      showLevelTwo: true,
       showLevelThree: false
     };
 
     this.setShowLevelOne = this.setShowLevelOne.bind(this);
     this.setShowLevelTwo = this.setShowLevelTwo.bind(this);
+    this.setShowLevelThree = this.setShowLevelThree.bind(this);
   }
 
   setShowLevelOne() {
@@ -58,9 +61,7 @@ class App extends React.Component {
 
         { this.state.showLevelOne ? <LevelOne phrases={this.props.samplePhrases}/> : null }
 
-        { this.state.showLevelTwo ? <div id='level-two'>
-          <h1>Level Two</h1>
-        </div> : null }
+        { this.state.showLevelTwo ? <LevelTwo /> : null }
 
         { this.state.showLevelThree ? <div id='level-three'>
           <h1>Level Three</h1>
