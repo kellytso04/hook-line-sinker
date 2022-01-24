@@ -1,7 +1,7 @@
 // TODO: What else will we need to import from React?
 import React from 'react';
-import Message from './Message.jsx';
-import Clock from './Clock.jsx';
+import Message from './Level 1/Message.jsx';
+import Clock from './Level 1/Clock.jsx';
 
 // TODO: Hmmmmmm, something's not right here.
 class App extends React.Component {
