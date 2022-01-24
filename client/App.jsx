@@ -1,30 +1,24 @@
-// TODO: What else will we need to import from React?
 import React from 'react';
 import Message from './levelOne/Message.jsx';
 import Clock from './levelOne/Clock.jsx';
 
-// TODO: Hmmmmmm, something's not right here.
-class App extends React.Component {
-  // TODO: Constructors are only used in class components. Get this out of my sight immediately.
-  constructor(props) {
-    super(props);
-  }
+/*
+Note 1: If you're not deconstructing your props, please start!
+That way you don't have to write `props.prop` for each one,
+and it greatly improves the readability of your code.
 
-  // TODO: When do we need a `render` function? When do we not?
-  render() {
-    return (
-      <div className='app'>
-        <div id='level-one'>
-          <h1>Level One</h1>
-          <Message samplePhrases={this.props.samplePhrases} />
-          <Clock />
-        </div>
-        <div id='level-two'>
-          <h1>Level Two</h1>
-        </div>
-      </div>
-    )
-  }
-}
+Note 2: You'll notice that this component does not contain a `return` statement;
+that's because if we use parentheses to open the component instead of curly braces,
+you can completely omit the `return` statement.
+Remember that this only works when your component is ONLY returning something.
+It won't work if you have any methods inside!
+*/
+
+const App = ( {samplePhrases} ) => (
+  <div className='app'>
+    <Message samplePhrases={samplePhrases} />
+    <Clock />
+  </div>
+)
 
 export default App;
