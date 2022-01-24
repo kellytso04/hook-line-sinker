@@ -1,7 +1,7 @@
 // TODO: What else will we need to import from React?
 import React from 'react';
-import Message from './Level 1/Message.jsx';
-import Clock from './Level 1/Clock.jsx';
+import Message from './levelOne/Message.jsx';
+import Clock from './levelOne/Clock.jsx';
 
 // TODO: Hmmmmmm, something's not right here.
 class App extends React.Component {
@@ -14,8 +14,14 @@ class App extends React.Component {
   render() {
     return (
       <div className='app'>
-        <Message samplePhrases={this.props.samplePhrases} />
-        <Clock />
+        <div id='level-one'>
+          <h1>Level One</h1>
+          <Message samplePhrases={this.props.samplePhrases} />
+          <Clock />
+        </div>
+        <div id='level-two'>
+          <h1>Level Two</h1>
+        </div>
       </div>
     )
   }
