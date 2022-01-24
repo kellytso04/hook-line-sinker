@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kellytso04/hook-line-sinker.git"
+    "url": "git+https://github.com/kellytso04/level-up.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kellytso04/hook-line-sinker/issues"
+    "url": "https://github.com/kellytso04/level-up/issues"
   },
-  "homepage": "https://github.com/kellytso04/hook-line-sinker#readme",
+  "homepage": "https://github.com/kellytso04/level-up#readme",
   "devDependencies": {
     "@babel/core": "^7.16.10",
     "@babel/preset-env": "^7.16.11",
