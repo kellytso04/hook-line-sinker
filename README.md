@@ -10,6 +10,6 @@ These are already configured to automatically update as you work on the reposito
 All the exercises are located in the `client` directory.
 It's highly recommended you start with Level One. The further up you go, the less instruction you'll receive in the comments. You're welcome.
 
-Solution code with notes is in the `solution` directory.
+Solution code is in the `solution` branch.
 
 ### Good luck, have fun!
