@@ -1,5 +1,6 @@
 # Level Up
-An exercise where students advance through levels of refactoring class components to use hooks.
+This is a repository I made for my students in Hack Reactor's Software Engineering Immersive. 
+Students will learn how to use React hooks by advancing through various exercises involving refactoring class components to use hooks.
 
 ## Instructions
 As always, run `npm i` first.
